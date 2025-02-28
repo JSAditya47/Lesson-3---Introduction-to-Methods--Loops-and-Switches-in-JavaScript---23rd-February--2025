@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Monospace;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        font-size: 27px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JavaScript String Methods and Loops</h2>
+    <p>Numbers from 1 to 10</p>
+    <p id="result"></p>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 11; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      document.write("The Random Value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      var date = new Date();
+      document.write("Today's Date is " + date.getDate());
+    </script>
+  </body>
+</html>
